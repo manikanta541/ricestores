@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- links -->
+  <title>Ricestores</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  
+
+<!-- header-->
+<style>
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0  0 40px 0;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-5px);
+  border-color: #ef7f4d;
+}
+
+.services .icon i {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 15px;
+  color: #ef7f4d;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #111;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+  html {
+  scroll-behavior: smooth;
+}
+
+.box:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background:rgba(192, 192, 192, 0.425);
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+*{ 
+  font-family:tahoma;
+}
+#section-bg{
+    margin-top:40px !important;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+/* .testheight Not required - unless testing ;) */
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 100;
+    opacity: 0.8;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+/* #feature  {
+  width: 100%;
+  height: 100vh;
+  background: url(img/finalbg.jpg) top center;
+  background-size: cover;
+  position: relative;
+} */
+
+.nav-fix{
+  top:0;
+  position: sticky;
+  z-index: 200;
+}
+li>a{
+    color:white !important;
+}
+.frontside .card{
+  
+  background-size: cover;
+  position: relative;
+  background-color: #eee !important;
+}
+.backside .card{
+  background-image: url(img/cardback.jpg.jpg ) !important;
+}
+p{
+  color: #808080 !important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:"white";
+}
+</style>
+</head>
+
+<body>
+  <a id="back-to-top" href="#" class="btn btn-danger  back-to-top" role="button"><span style='font-size:28px;'>&#8593;</span></a>
+<div class="nav-fix">
+<nav class="navbar navbar-expand-md navbar-light " style="background-color:#1abc9c;color:white">
+  <a class="navbar-brand" href="index.html"><img src="img/logo.jpg.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Order now <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="brands1.php">Premium brands</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="brands1.php">Basic brands</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="brands2.php">Deals for functios</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="brands3.php">New service</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html">Contact us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+<!-- <div id="feature " class="mt-4">
+  
+    <div class="row">
+      <div class="col-md-3 mt-3 mr-4 ml-4">
+        <section class="wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="1.4s">
+          <div class="  bg-silver rounded">
+    <div class="card p-2 " style="background-color: rgba(192, 192, 192, 0.425);">
+      <a href="brands1.html"><img class="card-img-top img-thumbnail img-responsive"   src="img/ct1.jpg" alt="Card image"  ></a>
+      <div class="card-body text-center">
+        
+        <a href="brands1.html" ><button class="btn btn-block btn-lg btn-outline" style="background-color: white;color: black;">Premium brands</button></a>
+      </div>
+    </div>
+          </div>
+  </section>
+</div>
+<div class="col-md-3 mt-3 mr-4 ml-4">
+
+  <section class="wow fadeInRight" data-wow-duration="0.4s" data-wow-delay="1.4s">
+    <div class="  bg-silver rounded">
+    <div class="card p-2" style="background-color: rgba(192, 192, 192, 0.425);">     
+       <a href="brands1.html"><img class="card-img-top img-thumbnail img-responsive" src="img/ct0.jpg" alt="Card image" ></a>
+      <div class="card-body text-center">
+        <a href="brands1.html" ><button class="btn btn-block btn-lg btn-outline-primary" style="color: black;background-color: white;">Basic brands</button></a>
+        
+      </div>
+    </div>
+    </div>
+    </section>
+</div>
+<div class="col-md-3 mt-3 mr-4 ml-4">
+
+    <section class="wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="1.4s">
+      <div class="  bg-silver rounded">
+    <div class="card p-2" style="background-color: rgba(192, 192, 192, 0.425);">
+      <a href="brands2.html"> <img class="card-img-top img-thumbnail img-responsive"  src="img/rice9.jpg" alt="Card image"></a>
+       <div class="card-body text-center">
+        <a href="brands2.html" ><button class="btn btn-block btn-lg btn-outline" style="color: black;background-color:white;">great deals for functions</button></a>
+      </div>
+    </div>
+      </div>
+    </section>
+</div>
+      <div class="col-md-3 mr-4 ml-4 mt-4">
+            <section class="wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="1.4s">
+              <div class="  bg-silver rounded">
+                  <div class="card p-2" style="background-color: rgba(192, 192, 192, 0.425);">
+                    <a href="brands3.html"> <img class="card-img-top img-thumbnail img-responsive"  src="img/ct2.png" alt="Card image"></a>
+                   <div class="card-body text-center">
+                    <a href="brands3.html" id="qu" ><button class="btn btn-block btn-lg btn-outline" style="color: black;background-color:white;">Another service you need??</button> </a>
+                   </div>
+                    <script>
+                      $(document).ready(function(){
+                        $("#qu").click(function(){
+                          window.open(href="brands3.html", '_self');
+                        });
+                      });
+                      </script>
+                   </div>
+                  
+                   </div>
+      </div>
+      </section>
+    </div>
+    <div class="col-md-4"></div>
+   </div>
+   
+  </div>
+  <br>
+</div> -->
+<section id="section-bg" class="pb-5 mt-2" >
+  <!--<div class="container">-->
+  <!--    <h5 class="section-title h1">OUR brands</h5>-->
+  <!--    <div class="row">-->
+          <!-- Team member -->
+          <!-- <div class="  bg-silver rounded">  -->
+  <!--        <div class="col-xs-12 col-sm-6 col-md-4">-->
+  <!--            <div class="" ontouchstart="this.classList.toggle('hover');">-->
+  <!--                <div class="mainflip">-->
+  <!--                    <div class="frontside">-->
+  <!--                      <div class="bg-silver rounded"> -->
+  <!--                        <div class="card" style="background-color: #fa1f68;">-->
+  <!--                            <div class="card-body text-center">-->
+  <!--                                <p><img class=" img-fluid" src="  img/ct.jpg" alt="card image"></p>-->
+  <!--                                <h4 class="card-title">Premium brands</h4>-->
+  <!--                                <p class="card-text">here you can find our premium brands</p>-->
+  <!--                                <a href="brands1.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+  <!--                            </div>-->
+  <!--                        </div>-->
+  <!--                        </div>-->
+  <!--                    </div>-->
+
+  <!--                </div>-->
+  <!--            </div>-->
+  <!--        </div>-->
+          
+          <!-- ./Team member -->
+          <!-- Team member -->
+  <!--        <div class="col-xs-12 col-sm-6 col-md-4">-->
+  <!--            <div class="" ontouchstart="this.classList.toggle('hover');">-->
+  <!--                <div class="mainflip">-->
+  <!--                    <div class="frontside">-->
+  <!--                      <div class="  bg-silver rounded"> -->
+
+  <!--                        <div class="card" style="background-image: url('img/examples.jpg);">-->
+  <!--                            <div class="card-body text-center">-->
+  <!--                                <p><img class=" img-fluid" src="  img/ct.jpg" alt="card image"></p>-->
+  <!--                                <h4 class="card-title">Basic brands</h4>-->
+  <!--                                <p class="card-text">here you can find our Basic brands</p>-->
+  <!--                                <a href="brands1.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+  <!--                            </div>-->
+  <!--                        </div>-->
+  <!--                        </div>-->
+
+  <!--                    </div>-->
+ 
+  <!--                </div>-->
+  <!--            </div>-->
+  <!--        </div>-->
+          <!-- ./Team member -->
+          <!-- Team member -->
+  <!--        <div class="col-xs-12 col-sm-6 col-md-4">-->
+  <!--            <div class="" ontouchstart="this.classList.toggle('hover');">-->
+  <!--                <div class="mainflip">-->
+  <!--                    <div class="frontside">-->
+  <!--                      <div class="  bg-silver rounded"> -->
+
+  <!--                        <div class="card">-->
+  <!--                            <div class="card-body text-center">-->
+  <!--                                <p><img class=" img-fluid" src="  img/ct.jpg" alt="card image"></p>-->
+  <!--                                <h4 class="card-title">Great deals for functions</h4>-->
+  <!--                                <p class="card-text">here you can choose your plan</p>-->
+  <!--                                <a href="brands2.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+  <!--                            </div>-->
+  <!--                        </div>-->
+  <!--                        </div>-->
+  <!--                    </div>-->
+
+  <!--                </div>-->
+  <!--            </div>-->
+  <!--        </div>-->
+          <!-- ./Team member -->
+          <!-- Team member -->
+  <!--        <div class="col-xs-12 col-sm-6 col-md-4"></div>-->
+  <!--        <div class="col-xs-12 col-sm-6 col-md-4">-->
+  <!--            <div class="" ontouchstart="this.classList.toggle('hover');">-->
+  <!--                <div class="mainflip">-->
+  <!--                    <div class="frontside">-->
+  <!--                      <div class="  bg-silver rounded"> -->
+  <!--                        <div class="card">-->
+  <!--                            <div class="card-body text-center">-->
+  <!--                                <p><img class=" img-fluid" src="  img/ct.jpg" alt="card image"></p>-->
+  <!--                                <h4 class="card-title">Another service need??</h4>-->
+  <!--                                <p class="card-text">if another service you need from then let us know</p>-->
+  <!--                                <a href="brands3.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+  <!--                            </div>-->
+  <!--                        </div>-->
+  <!--                        </div>-->
+  <!--                    </div>-->
+
+  <!--                </div>-->
+  <!--            </div>-->
+  <!--        </div>-->
+  <!--        </div>-->
+  <!--    </div>-->
+
+
+<!--<div class="row">-->
+
+<!--          <div class="col-md-6   wow fadeInRight" data-wow-duration="1.4s">-->
+<!--            <div class="box" id="premium">-->
+<!--              <h2 class="title"><a href="brands1.php" style="color:black"><strong>Premium brands</strong></a></h2>-->
+<!--              <p class="description" style="color:rgba(17, 17, 17, 0.705)">here you can find our basic brands</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <script>-->
+<!--                $(document).ready(function(){-->
+<!--                  $("#premium").click(function(){-->
+<!--                    window.open(href="brands1.php", '_self');-->
+<!--                  });-->
+<!--                });-->
+<!--                </script>-->
+<!--          <div class="col-md-6   wow fadeInLeft" data-wow-duration="1.4s">-->
+<!--            <div class="box" id="basic">-->
+<!--              <h2 class="title"><a href="brands1.php" style="color:black;"><strong>Basic brands</strong></a></h2>-->
+<!--              <p class="description" style="color:rgba(17, 17, 17, 0.705)">here you can find our premium brands</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--            <script>-->
+<!--                $(document).ready(function(){-->
+<!--                  $("#basic").click(function(){-->
+<!--                    window.open(href="brands1.php", '_self');-->
+<!--                  });-->
+<!--                });-->
+<!--                </script>-->
+<!--          <div class="col-md-6    wow fadeInRight" data-wow-delay="0.1s" data-wow-duration="1.4s">-->
+<!--            <div class="box" id="great">-->
+<!--              <h2 class="title"><a href="brands2.php" style="color:black"><strong>Great deals for functions</strong></a></h2>-->
+<!--              <p class="description" style="color:rgba(17, 17, 17, 0.705)">here you can choose your plan for functions</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <script>-->
+<!--                $(document).ready(function(){-->
+<!--                  $("#great").click(function(){-->
+<!--                    window.open(href="brands2.php", '_self');-->
+<!--                  });-->
+<!--                });-->
+<!--                </script>-->
+<!--          <div class="col-md-6   wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1.4s">-->
+<!--            <div class="box" id="serve">-->
+<!--              <h2 class="title"><a href="brands3.php" style="color:black"><strong>Another service need??</strong></a></h2>-->
+<!--              <p class="description" style="color:rgba(17, 17, 17, 0.705)">if another service you need from then let us know</p>-->
+<!--            </div>-->
+<!--          </div>-->
+          <!--<div class="col-md-6   wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1.4s">-->
+          <!--  <div class="box text-center" id="serve">-->
+          <!--    <h2 class="title"><a href="brands3.php" style="color:black"><strong>Sample</strong></a></h2>-->
+          <!--  </div>-->
+          <!--</div>-->
+<!--          <script>-->
+<!--                $(document).ready(function(){-->
+<!--                  $("#serve").click(function(){-->
+<!--                    window.open(href="brands3.php", '_self');-->
+<!--                  });-->
+<!--                });-->
+<!--                </script>-->
+
+<!--        </div>-->
+<!--        </section>-->
+        
+        <section id="services" class="services section-bg" mt-5>
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Services we offer</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6   wow bounceInUp" data-wow-delay="0.1s"  data-wow-duration="1.4s" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box" id="premium">
+              <i class="fas fa-heart"></i>
+              <h4 class="title"><a href="brands1.php">Premium brands</a></h4>
+              <p class="description">here you can choose premium brands</p>
+            </div>
+          </div>
+          <script>
+                $(document).ready(function(){
+                  $("#premium").click(function(){
+                    window.open(href="brands1.php", '_self');
+                  });
+                });
+                </script>
+
+          <div class="col-md-6   wow bounceInUp" data-wow-delay="0.1s"  data-wow-duration="1.4s" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box" id="basic">
+              <i class="fas fa-heart"></i>
+              <h4 class="title"><a href="brands1.php">Basic brands</a></h4>
+              <p class="description">here you can choose basic brands</p>
+            </div>
+          </div>
+            <script>
+                $(document).ready(function(){
+                  $("#basic").click(function(){
+                    window.open(href="brands1.php", '_self');
+                  });
+                });
+                </script>
+          <div class="col-md-6   wow bounceInUp" data-wow-delay="0.1s"  data-wow-duration="1.4s" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box" id="great">
+             <i class="fas fa-heart"></i>
+              <h4 class="title"><a href="brands2.php">Great deals for functions</a></h4>
+              <p class="description">choose your plan for functions now</p>
+            </div>
+          </div>
+          <script>
+                $(document).ready(function(){
+                  $("#great").click(function(){
+                    window.open(href="brands2.php", '_self');
+                  });
+                });
+                </script>
+
+          <div class="col-md-6   wow bounceInUp" data-wow-delay="0.1s"  data-wow-duration="1.4s" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box" id="serve">
+                <i class="fas fa-heart"></i>
+                <h4 class="title"><a href="brands3.php">service need??</a></h4>
+              <p class="description">if another service you need from us then let us know</p>
+            </div>
+          </div>
+          <script>
+                $(document).ready(function(){
+                  $("#serve").click(function(){
+                    window.open(href="brands3.php", '_self');
+                  });
+                });
+                </script>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+<script>
+$(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});
+</script>
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/animate.css">
+
+  <style>
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url(img/cardback.jpg) top center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  /* background: rgba(0, 0, 0, 0.6); */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+a:hover{
+  background-color:skyblue;
+}
+li>a{
+    color:white !important;
+}
+
+#hero .hero-container {
+  position: absolute;
+
+  top: 40px; 
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero h1 {
+  margin-bottom: 40px;
+  margin-top: 0px !important;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: white;;
+}
+
+#hero h2 {
+  color: aqua;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+
+
+#intro .intro-content {
+
+  z-index: 10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+/* @media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  } */
+
+#intro .intro-content h2 {
+  color: #0c2e8a;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#intro .intro-content h2 span {
+  color: #50d8af;
+  text-decoration: underline;
+}
+
+#intro .intro-content .btn-get-started,
+#intro .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding:11px 28px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+}
+
+#intro .intro-content .btn-get-started {
+  background: rgba(192, 192, 192, 0.425);
+  border: 2px solid rgba(0, 0, 0, 0.445);
+}
+
+#intro .intro-content .btn-get-started:hover {
+  background: none;
+  color: white;
+}
+
+#intro .intro-content .btn-projects {
+  background: rgba(192, 192, 192, 0.425);
+  border: 2px solid rgba(0, 0, 0, 0.445);
+}
+
+#intro .intro-content .btn-projects:hover {
+  background: none;
+  color: white;
+}
+
+#hero .btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  /* font-weight: 500; */
+  font-size: 1.8vw;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 2px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  background:none;
+}
+h6{
+  font-size: 100px;
+  color: #fff;
+}
+/*.nav-fix{*/
+/*  z-index: 10;*/
+/*}*/
+
+  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Rice stores</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light " style="background-color:#1abc9c">
+  <a class="navbar-brand" href="#"><img src="img/logo.jpg.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Order now <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="brands1.php">Premium brands</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="brands1.php">Basic brands</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="brands2.php">Deals for functios</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="brands3.php">New service</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html">Contact us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <section id="hero">
+    <div class="nav-fix">
+  
+    </div>
+    <div class="hero-container">
+      <section class="wow fadeInRight p-1 mt-5" data-wow-duration="0.4s" data-wow-delay="0.8s">
+      <span style="color: rgb(245, 242, 248)">Welcome to <h1 style="margin-bottom:-20px">DK rice stores</h1></span><br>
+      <span style="color: rgb(245, 242, 248);background-color:rgba(0, 0, 0, 0.26);font-size: 3vw;" >get the best rice delivered to your door step with no time <strong >RICESTORES.IN</strong> provides the best rice service. You can find all kinds of rice </span>
+      </section>
+      <section id="intro">
+      <div class="intro-content">
+        <div>
+          <a href="home.html" class="btn-get-started scrollto">ordernow</a>
+          <a href="contact.html" class="btn-projects scrollto">contact dealer</a>
+        </div>
+      </div>
+      </section>
+    </div>
+  </section>
+
+
+<!-- <div id="b">
+  <div class="container mt-2 mb-4">
+    <div class="col-sm-8 ml-auto mr-auto">
+      <ul class="nav nav-pills nav-fill mb-1" id="pills-tab" role="tablist">
+        <li class="nav-item"> <a class="nav-link active"   id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false">View our Offers</a> </li>
+
+        <li class="nav-item" > <a class="nav-link"  id="pills-signin-tab"    data-toggle="pill" href="#pills-signin" role="tab" aria-controls="pills-signin" aria-selected="true">Contact with Dealer</a> </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+
+        <div class="tab-pane fade show active" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
+          <div class="col-sm-12  shadow rounded pt-2 pb-2" style="background-color: #d6e23279;">
+                <section class="wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.5s">
+        
+                  <div class="card p-4 " style="background-color:rgba(192, 192, 192, 0.425);width:100%;height: 50%;" >
+                   <a href="#pricing"><img class="card-img-top img-responsive rounded-circle"  src=" img/offer.png" alt="Card image"style="width:100%;height:400px"  ></a>
+                  <div class="card-body text-center">
+                     <h4 class="card-title" >View our Offers and place order??</h4>
+                  <button style="background-color: #1abc9c;" class="btn btn-outline-primary mr-4 " required="required"> <a style="color: white;" href="home.html" target="_self"> view</a></button>
+        </div>
+      </div>
+        
+    </section>
+          </div>
+        </div>
+        <div class="tab-pane fade " id="pills-signin" role="tabpanel" aria-labelledby="pills-signin-tab">
+          <div class="col-sm-12 shadow rounded pt-2 pb-2" style="background-color:#d6e23279;">
+                  <section class="wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.5s">
+        
+                   <div class="card p-4 " style="background-color: rgba(192, 192, 192, 0.425);" >
+                       <a href="#pricing"><img class="card-img-top img-responsive rounded-circle"   src=" img/ct.jpg" alt="Card image"style="width:100%;height:400px"  ></a>
+                              <div class="card-body text-center">
+                                <h4 class="card-title" >Direct contact with dealer</h4>
+                    <button style="background-color: #1abc9c;" class="btn btn-outline-primary mr-4 " required="required"> <a style="color: white;" href="contact.html" target="_self"> contact dealer</a></button>
+             </div>
+          </div>
+        
+          </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> -->
+  <script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+
+
+</body>
+</html>
